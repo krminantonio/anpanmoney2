@@ -11,13 +11,6 @@ const Login = () => {
     const [error, setError] = useState(""); 
     const navigate = useNavigate();
 
-
-    handleChange = e => {
-        this.setState({
-            [e.target.name]: e.target.value
-        });
-    }
-
     const handleSubmit = async(e) => {
         e.preventDefault();
         setError("");
